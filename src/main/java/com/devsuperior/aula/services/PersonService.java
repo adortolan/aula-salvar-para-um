@@ -44,6 +44,15 @@ public class PersonService {
     }
 
     public PersonDTO insert(PersonDTO dto){
+
+        //Desta forma retorna o objeto assim
+//        {
+//            "id": 5,
+//            "name": "Nova Pessoa",
+//            "salary": 1.2345678901E10,
+//            "departmentId": 1
+//        }
+
         Person person = new Person();
         person.setName(dto.getName());
         person.setSalary(dto.getSalary());
